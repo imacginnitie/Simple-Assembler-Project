@@ -1,0 +1,126 @@
+.start setup
+
+initialhead: .Integer #0			
+initialstate: .Integer #0			
+steps: .Integer #0				
+numberTuples: .Integer #8				
+tape: .String "_XX.YYY+"
+bracketfront: .String "["
+bracketback: .String "]"
+doesitmatchis: .String "  initial state matched"
+doesitmatchic: .String "  initial char matched"
+doesitmoveright: .String "  moves right"
+doesitmoveleft: .String "  moves left"
+tracechar: .String " "
+
+Tuple1: .tuple \0 _ 0 _ r\	
+Tuple2: .tuple \0 X 0 A r\
+Tuple3: .tuple \0 . 0 . r\	
+Tuple4: .tuple \0 Y 0 B r\	
+Tuple5: .tuple \0 + 1 + l\	
+Tuple6: .tuple \1 B 1 D l\	
+Tuple7: .tuple \1 . 1 . l\	
+Tuple8: .tuple \1 A 1 C l\	
+
+;r0 will be current state
+;r1 will be head (memory index of tape location)
+;r2 will index of correct tuple in memory
+;r3 will be for anything else
+;r4 will 
+;r5 will 
+;r6 will contain steps
+;r7 will 
+;r8 will 
+;r9 will 
+
+setup: movar Tuple1 r2
+subir #5 r2 
+movar tape r1
+movrr r1 r8 ;r8 contains length of tape
+movrr r1 r7
+addrr r8 r7 ;r7 now contains index of last char on tape
+addir #1 r1 ;r1 now contains index of first char on tape
+movmr initialstate r0
+movir #8 r9
+mulir #5 r9
+addrr r2 r9
+movar steps r6
+
+findtuple: addir #5 r2
+;outci #10
+cmprr r2 r9
+movar Tuple1 r5
+movar numberTuples r7
+mulir #5 r7
+addrr r7 r5
+subir #4 r5
+;cmprr r5 r2
+cmpir #141 r2 ;1+index of last tuple
+jmpn end
+movxr r2 r3
+cmprr r3 r0 ;checks to see if current state matches tuple
+jmpne findtuple
+;outs doesitmatchis
+movrr r2 r3
+addir #1 r3 ;r3 now contains index of inputchar for tuple
+movxr r3 r4 ;r4 now contains inputchar for tuple
+movxr r1 r5
+cmprr r4 r5
+jmpne findtuple
+;outs doesitmatchic
+;jsr changechar
+
+resettrace: movar tape r5
+
+tracebefore: addir #1 r5
+outcx r5
+cmprr r5 r1
+jmpn tracebefore
+
+traceduring: addir #1 r5
+outs bracketfront
+outcx r5
+outs bracketback
+
+traceafter: addir #1 r5
+outcx r5
+cmprr r5 r7
+jmpne traceafter
+
+tracecomplete: outci #10
+
+changecharandstate: movrr r2 r4 ;r4 now contains correctoutci #10tuple index
+movrr r4 r0
+addir #3 r4
+movxr r4 r5 ;r5 now contains output char
+movrx r5 r1 ;moves output char to tape location in memory
+movrr r2 r4 ;r4 now contains correcttuple index
+addir #2 r4 ;r4 now contains index of new state
+movxr r4 r5 ;r5 now contains new state
+movrr r5 r0 ;state updated	
+
+move: addir #1 r6 ;steps
+movrr r2 r8
+addir #4 r8
+movxr r8 r7 ;r7 now contains direction -1 or 1
+movar Tuple1 r2 ;resets correcttuple index
+subir #5 r2 ;resets correcttuple index
+cmpir #1 r7
+jmpne left
+addir #1 r1
+movar tape r5
+movrr r5 r7
+addir #1 r7
+addrr r5 r7
+;cmprr r7 r1
+cmpir #16 r1
+jmpp findtuple
+
+left: subir #1 r1
+cmpir #5 r1
+jmpn findtuple
+
+end: outs tape
+outci #10
+halt
+
