@@ -7,18 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		795130B220C877D500ACE6E3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795130B120C877D500ACE6E3 /* main.swift */; };
-		795130B920C8782000ACE6E3 /* VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795130B820C8782000ACE6E3 /* VM.swift */; };
-		795130BB20C8783200ACE6E3 /* support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795130BA20C8783200ACE6E3 /* support.swift */; };
-		795130BD20C8786500ACE6E3 /* assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795130BC20C8786500ACE6E3 /* assembler.swift */; };
-		795130BF20C88A7E00ACE6E3 /* tokenStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795130BE20C88A7E00ACE6E3 /* tokenStuff.swift */; };
-		795130C120C89D2900ACE6E3 /* tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795130C020C89D2900ACE6E3 /* tokenizer.swift */; };
-		79B2687A20CEBEFE00052520 /* debugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2687920CEBEFE00052520 /* debugger.swift */; };
-		79E7765F20CC578400C51F3C /* assemblerStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E7765E20CC578400C51F3C /* assemblerStuff.swift */; };
+		BB451D27251D5025002E05D8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB451D26251D5025002E05D8 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		795130AC20C877D500ACE6E3 /* CopyFiles */ = {
+		BB451D22251D5025002E05D8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -30,19 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		795130AE20C877D500ACE6E3 /* SAP4real$ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SAP4real$; sourceTree = BUILT_PRODUCTS_DIR; };
-		795130B120C877D500ACE6E3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		795130B820C8782000ACE6E3 /* VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VM.swift; sourceTree = "<group>"; };
-		795130BA20C8783200ACE6E3 /* support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = support.swift; sourceTree = "<group>"; };
-		795130BC20C8786500ACE6E3 /* assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assembler.swift; sourceTree = "<group>"; };
-		795130BE20C88A7E00ACE6E3 /* tokenStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tokenStuff.swift; sourceTree = "<group>"; };
-		795130C020C89D2900ACE6E3 /* tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tokenizer.swift; sourceTree = "<group>"; };
-		79B2687920CEBEFE00052520 /* debugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = debugger.swift; sourceTree = "<group>"; };
-		79E7765E20CC578400C51F3C /* assemblerStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assemblerStuff.swift; sourceTree = "<group>"; };
+		BB451D24251D5025002E05D8 /* SAP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SAP; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB451D26251D5025002E05D8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		795130AB20C877D500ACE6E3 /* Frameworks */ = {
+		BB451D21251D5025002E05D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,7 +41,7 @@
 		795130A520C877D500ACE6E3 = {
 			isa = PBXGroup;
 			children = (
-				795130B020C877D500ACE6E3 /* SAP4real$ */,
+				BB451D25251D5025002E05D8 /* SAP */,
 				795130AF20C877D500ACE6E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,44 +49,37 @@
 		795130AF20C877D500ACE6E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				795130AE20C877D500ACE6E3 /* SAP4real$ */,
+				BB451D24251D5025002E05D8 /* SAP */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		795130B020C877D500ACE6E3 /* SAP4real$ */ = {
+		BB451D25251D5025002E05D8 /* SAP */ = {
 			isa = PBXGroup;
 			children = (
-				795130B120C877D500ACE6E3 /* main.swift */,
-				795130C020C89D2900ACE6E3 /* tokenizer.swift */,
-				795130BC20C8786500ACE6E3 /* assembler.swift */,
-				79E7765E20CC578400C51F3C /* assemblerStuff.swift */,
-				795130B820C8782000ACE6E3 /* VM.swift */,
-				795130BA20C8783200ACE6E3 /* support.swift */,
-				795130BE20C88A7E00ACE6E3 /* tokenStuff.swift */,
-				79B2687920CEBEFE00052520 /* debugger.swift */,
+				BB451D26251D5025002E05D8 /* main.swift */,
 			);
-			path = SAP4real$;
+			path = SAP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		795130AD20C877D500ACE6E3 /* SAP4real$ */ = {
+		BB451D23251D5025002E05D8 /* SAP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 795130B520C877D500ACE6E3 /* Build configuration list for PBXNativeTarget "SAP4real$" */;
+			buildConfigurationList = BB451D2A251D5025002E05D8 /* Build configuration list for PBXNativeTarget "SAP" */;
 			buildPhases = (
-				795130AA20C877D500ACE6E3 /* Sources */,
-				795130AB20C877D500ACE6E3 /* Frameworks */,
-				795130AC20C877D500ACE6E3 /* CopyFiles */,
+				BB451D20251D5025002E05D8 /* Sources */,
+				BB451D21251D5025002E05D8 /* Frameworks */,
+				BB451D22251D5025002E05D8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SAP4real$;
-			productName = SAP4real$;
-			productReference = 795130AE20C877D500ACE6E3 /* SAP4real$ */;
+			name = SAP;
+			productName = SAP;
+			productReference = BB451D24251D5025002E05D8 /* SAP */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -109,16 +88,16 @@
 		795130A620C877D500ACE6E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Isabel MacGinnitie";
 				TargetAttributes = {
-					795130AD20C877D500ACE6E3 = {
-						CreatedOnToolsVersion = 9.3;
+					BB451D23251D5025002E05D8 = {
+						CreatedOnToolsVersion = 12.0;
 					};
 				};
 			};
-			buildConfigurationList = 795130A920C877D500ACE6E3 /* Build configuration list for PBXProject "SAP4real$" */;
+			buildConfigurationList = 795130A920C877D500ACE6E3 /* Build configuration list for PBXProject "SAP" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -130,24 +109,17 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				795130AD20C877D500ACE6E3 /* SAP4real$ */,
+				BB451D23251D5025002E05D8 /* SAP */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		795130AA20C877D500ACE6E3 /* Sources */ = {
+		BB451D20251D5025002E05D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				795130BD20C8786500ACE6E3 /* assembler.swift in Sources */,
-				795130C120C89D2900ACE6E3 /* tokenizer.swift in Sources */,
-				795130B920C8782000ACE6E3 /* VM.swift in Sources */,
-				795130BF20C88A7E00ACE6E3 /* tokenStuff.swift in Sources */,
-				79E7765F20CC578400C51F3C /* assemblerStuff.swift in Sources */,
-				795130BB20C8783200ACE6E3 /* support.swift in Sources */,
-				79B2687A20CEBEFE00052520 /* debugger.swift in Sources */,
-				795130B220C877D500ACE6E3 /* main.swift in Sources */,
+				BB451D27251D5025002E05D8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,28 +239,35 @@
 			};
 			name = Release;
 		};
-		795130B620C877D500ACE6E3 /* Debug */ = {
+		BB451D28251D5025002E05D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		795130B720C877D500ACE6E3 /* Release */ = {
+		BB451D29251D5025002E05D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		795130A920C877D500ACE6E3 /* Build configuration list for PBXProject "SAP4real$" */ = {
+		795130A920C877D500ACE6E3 /* Build configuration list for PBXProject "SAP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				795130B320C877D500ACE6E3 /* Debug */,
@@ -297,11 +276,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		795130B520C877D500ACE6E3 /* Build configuration list for PBXNativeTarget "SAP4real$" */ = {
+		BB451D2A251D5025002E05D8 /* Build configuration list for PBXNativeTarget "SAP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				795130B620C877D500ACE6E3 /* Debug */,
-				795130B720C877D500ACE6E3 /* Release */,
+				BB451D28251D5025002E05D8 /* Debug */,
+				BB451D29251D5025002E05D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
