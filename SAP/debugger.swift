@@ -5,7 +5,7 @@
 //  Created by Isabel MacGinnitie on 6/11/18.
 //  Copyright © 2018 Isabel MacGinnitie. All rights reserved.
 //
-
+/*
 import Foundation
 import Foundation
 
@@ -25,7 +25,7 @@ class debuggerVM {
         flag = true
         index = 1
         //print("type your directory")
-        let input = "/Users/isabelmacginnitie/Desktop/SAP/turing.bin"//readLine()
+        let input = "//Users/isabelmacginnitie/Desktop/SAPturing.bin"//readLine()
         let (_, b) = (readTextFile(input))//!))
         let b2 = splitStringIntoLines(b!).map{ Int($0)! }
         var inter = 0
@@ -61,7 +61,7 @@ class debuggerVM {
         //index=startindex
         
         //print("running")
-        let input = "/Users/isabelmacginnitie/Desktop/SAP/turing.bin"//readLine()
+        let input = "//Users/isabelmacginnitie/Desktop/SAPturing.bin"//readLine()
         let (_, b) = (readTextFile(input))//!))
         let b2 = splitStringIntoLines(b!).map{ Int($0)! }
         var inter = 0
@@ -686,4 +686,4 @@ class debugger{
         }
     }
 }
-
+*/

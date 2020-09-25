@@ -32,7 +32,7 @@ class Assembler{
     func run(){
         pass1()
         list = pass2()
-        let _ = (writeTextFile("/Users/isabelmacginnitie/Desktop/SAP/turingyay.lst", data: list))
+        let _ = (writeTextFile("//Users/isabelmacginnitie/Desktop/SAP/turingyay.lst", data: list))
         legitbin = "\(binary3.count-1)\n"
         for arr in binary2{
             for bin in arr{
@@ -40,7 +40,7 @@ class Assembler{
                 legitbin += "\n"
             }
         }
-        let _ = (writeTextFile("/Users/isabelmacginnitie/Desktop/SAP/", data: legitbin))
+        let _ = (writeTextFile("//Users/isabelmacginnitie/Desktop/SAP/turingyay.bin", data: legitbin))
     }
     func pass1(){
         for number in 0..<tokens.count{
